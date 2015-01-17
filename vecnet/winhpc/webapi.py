@@ -141,9 +141,9 @@ class WebAPI:
 
         try:
             r = http(url,
-                 data=data,
-                 headers=headers,
-                 **self.requests_kwargs)
+                     data=data,
+                     headers=headers,
+                     **self.requests_kwargs)
             self.response = r.text
             if r.status_code != 200:
                 return False
@@ -210,7 +210,7 @@ class WebAPI:
         url = self.base_url + "Job/%s/Task/%s/Cancel" % (job_id, task_id)
         xml = "<string xmlns=\"http://schemas.microsoft.com/2003/10/Serialization/\">%s</string>" % message
         if forced:
-            url+="?Forced=True"
+            url += "?Forced=True"
         return self.post(url, xml)
 
     def create_job(self, **properties):
@@ -351,7 +351,7 @@ class WebAPI:
             return None
         return self._get_properties_from_xml()
 
-    def get_task_environment_variables(self, job_id, task_id, requested_env_variables = None):
+    def get_task_environment_variables(self, job_id, task_id, requested_env_variables=None):
         # Gets the values of the specified environment variables for the task,
         # or the values of all of the environment variables if none are specified.
         # http://msdn.microsoft.com/en-us/library/hh529657(v=vs.85).aspx
