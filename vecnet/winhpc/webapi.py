@@ -125,6 +125,15 @@ class WebAPI:
         return properties
 
     def request(self, method, url, data=None, headers=None):
+        """ Send HTTP request to WinHPC WebAPI server using correct headers, api-version and credentials
+        :param method: HTTP method (GET, POST or PUT)
+        :param url: URL to post
+        :param data: (optional) Data to be posted
+        :param headers: (optional) Additional headers if necessary
+
+        :return: True if request successfully completed
+        :return: False if error happened
+        """
         if headers is None:
             headers = self.headers
         else:
