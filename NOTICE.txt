@@ -1,0 +1,11 @@
+Python wrapper for Web Service Interface in Microsoft HPC Pack
+https://github.com/vecnet/winhpc
+
+Copyright 2015 Alex Vyushkov
+
+Contributors:
+  Alex Vyushkov
+
+This project is licensed under the Mozilla Public License, version 2.0 (the
+"License").  A copy of the License is in the project file "LICENSE.txt",
+and is also available at http://mozilla.org/MPL/2.0/.
