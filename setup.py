@@ -12,7 +12,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="winhpc_api",
-    version="1.0.0",
+    version="0.6.0",
     license="MPL 2.0",
     author="Alexander Vyushkov",
     author_email="alex.vyushkov@gmail.com",
