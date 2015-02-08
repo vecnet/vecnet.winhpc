@@ -11,7 +11,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="winhpc_api",
+    name="vecnet.winhpc",
     version="0.6.0",
     license="MPL 2.0",
     author="Alexander Vyushkov",
