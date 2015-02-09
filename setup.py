@@ -12,13 +12,13 @@ from setuptools import setup, find_packages
 
 setup(
     name="vecnet.winhpc",
-    version="0.6.0",
+    version="0.7.0",
     license="MPL 2.0",
     author="Alexander Vyushkov",
     author_email="alex.vyushkov@gmail.com",
     description="Python interface for Windows HPC Server REST API",
     keywords="winhpc hpc scheduler windows webapi rest api",
-    url="https://github.com/vecnet/winhpc",
+    url="https://github.com/vecnet/vecnet.winhpc",
     packages=find_packages(),  # https://pythonhosted.org/setuptools/setuptools.html#using-find-packages
     install_requires=['requests'],
     classifiers=[
